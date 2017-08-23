@@ -1,31 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
+
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>39-10th</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>test</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Webフォント -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/animate.css">
+    <link rel="stylesheet" href="css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css">
+    <noscript>
+      <!-- JavaScriptが無効化されている場合の追加スタイルシート -->
+      <link rel="stylesheet" href="css/noscript.css">
+    </noscript>
   </head>
-  <body>
 
-	<iframe width="200" height="113" src="https://www.youtube.com/embed/PqJNc9KVIZE?rel=0&amp;controls=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>
+  <body data-spy="scroll" data-target="#navbar">
+    <section class="top">
+      <!-- ナビゲーションバー -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <!-- 画面幅が狭い時に表示されるハンバーガーメニュー -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">ナビゲーションの表示切り替え</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 
-	<script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm10748238/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm10748238">【初音ミク】 ロベリア / Lobelia 【オリジナル】</a></noscript>
+            <!-- ホームリンク -->
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
+          </div><!--/.navbar-header -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <!-- メニュー -->
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#top">TOP</a></li>
+              <li><a href="#puppies">子犬</a></li>
+              <li><a href="#kittens">子猫</a></li>
+              <li><a href="#prepare">大切なこと</a></li>
+              <li><a href="#gallery">ギャラリー</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- 背景とビデオ -->
+      <div id="top" class="top__bg">
+        <video autoplay muted loop class="top__video">
+          <source src="video/top-video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="top__text-box">
+        <h1 class="top__title">Puppies and Kittens!</h1>
+        <div class="top__catchphrase">世界の子犬と子猫を大切に育てよう</div>
+      </div>
+    </section>
+
+
+
+    <!-- ギャラリー -->
+    <section id="gallery" class="gallery">
+      <div class="gallery__phrase animated">ギャラリー</div>
+      <h2 class="gallery__title animated">Gallery</h2>
+      <div class="image-gallery animated">
+        <div class="image-gallery__item">
+          <a class="popup" href="img/kitten1.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/kitten1.jpg" width="176" height="176" alt="シェパード"></a>
+        </div>
+        <div class="image-gallery__item">
+          <a class="popup" href="img/kitten2.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/kitten2.jpg" width="176" height="176" alt="レトリバー"></a>
+        </div>
+        <div class="image-gallery__item">
+          <a class="popup" href="img/kitten3.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/kitten3.jpg" width="176" height="176" alt="プードル"></a>
+        </div>
+        <div class="image-gallery__item">
+          <a class="popup" href="img/kitten4.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/kitten4.jpg" width="176" height="176" alt="ポメラニアン"></a>
+        </div>
+        <div class="image-gallery__item">
+          <a class="popup" href="img/puppy1.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/puppy1.jpg" width="176" height="176" alt="アメリカンショートヘア"></a>
+        </div>
+        <div class="image-gallery__item">
+          <a class="popup" href="img/puppy2.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/puppy2.jpg" width="176" height="176" alt="スコティッシュフォールド"></a>
+        </div>
+        <div class="image-gallery__item">
+          <a class="popup" href="img/puppy3.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/puppy3.jpg" width="176" height="176" alt="ベンガル"></a>
+        </div>
+        <div class="image-gallery__item">
+          <a class="popup" href="img/puppy4.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/puppy4.jpg" width="176" height="176" alt="ロシアンブルー"></a>
+        </div>
+      </div><!--/.image-gallery -->
+    </section><!--/.gallery -->
+
+    <!-- フッター -->
+    <footer>
+      &copy; 2017 StarCreates
+    </footer>
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.waypoints.min.js"></script>
+    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="js/vendor/mobile-detect.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
