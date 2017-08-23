@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="初音ミクの10周年をお祝いする非公式のファンサイトです。">
+		<title>39-10th</title>
+		<link rel="stylesheet" href="css/jquery.countdown.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script>
+		$(function () {
+			var austDay = new Date();
+			austDay = new Date(austDay.getFullYear(), 7, 31);
+			$('#defaultCountdown').countdown({until: austDay});
+			$('#year').text(austDay.getFullYear());
+		});
+		</script>
+	</head>
+	<body>
+		<header>
+		
+		</header>
+		<div id="wrapper">
+			<p>初音ミク10周年まで</p>
+			<div id="defaultCountdown"></div>
+		</div>
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<script src="js/jquery.plugin.min.js"></script>
+		<script src="js/jquery.countdown.js"></script>
+	</body>
+</html>

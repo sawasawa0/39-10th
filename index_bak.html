@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="初音ミクの10周年をお祝いする非公式のファンサイトです。">
+
+		<title>39-10th</title>
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+
+		<script>
+			$(function () {
+				var austDay = new Date();
+				austDay = new Date(austDay.getFullYear(), 7, 31);
+				$('#defaultCountdown').countdown({until: austDay});
+				$('#year').text(austDay.getFullYear());
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<header>
+
+		</header>
+
+		<div id="wrapper">
+			<div class="rows">
+				<div class="text-center">
+					<h1 class="countdown-period">初音ミク生誕10周年まで</h1>
+
+					<!-- カウントダウンタイマー -->
+
+					<div id="defaultCountdown"></div>
+
+					<h2 class="countdown-period">comming soon...</h2>
+				</div>
+			</div>
+		</div>
+
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown-ja.js"></script>
+
+	</body>
+</html>

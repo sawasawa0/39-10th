@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="初音ミクの10周年をお祝いする非公式のファンサイトです。">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- OGP -->
+		<!-- ※基本共通設定 -->
+		<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+		<title>39-10th</title>
+		<meta property="og:title" content="初音ミク10周年生誕祭【非公式】 " />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://39-10th.com" />
+		<meta property="og:image" content="http://39-10th.com/img/39-10thOGP01.png" />
+		<meta property="og:site_name" content="39-10th" />
+		<meta property="og:description" content="初音ミクの10周年をお祝いする非公式のファンサイトです。" />
+
+		<!-- Facebook用設定 -->
+		<meta property="fb:app_id" content="233804487143118" />
+
+		<!-- ※Twitter共通設定 -->
+		<meta name="twitter:card" content="photo" />
+
+
+		<!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<script>
+		$(function () {
+			var austDay = new Date();
+			austDay = new Date(austDay.getFullYear(), 7, 31);
+			$('#defaultCountdown').countdown({until: austDay});
+			$('#year').text(austDay.getFullYear());
+		});
+		</script>
+	</head>
+	<body>
+		<header>
+
+		</header>
+		<div id="wrapper">
+			<div class="rows">
+				<div class="text-center">
+					<h1 class="countdown-text text-center">初音ミク生誕10周年まで</h1>
+
+					<!-- カウントダウンタイマー -->
+
+					<div id="defaultCountdown" class="clearfix"></div>
+
+					<h2 class="countdown-text">comming soon...</h2>
+					<p class="countdown-text-mini">当サイトは、初音ミクの10周年をお祝いする<br>非公式のファンサイトです。</p>
+					<p class="countdown-text-mini">公式の初音ミク10周年記念サイトはこちら</p>
+					<a href="http://piapro.net/miku10th/" class="countdown-text-link"><p>http://piapro.net/miku10th/</p></a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script src="js/jquery.plugin.min.js"></script>
+		<script src="js/jquery.countdown.js"></script>
+	</body>
+</html>
