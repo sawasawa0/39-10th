@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+html {
+  font-size: 1em;
+  line-height: 1.5; /* 24px */
+}
+
+body {
+  color: #333;
+  background-color: #fcfCfC;
+  font-family: 'Roboto', YuGothic, '游ゴシック', sans-serif;
+  font-size: 20px;
+    overflow-x: hidden;
+}
+
+p {
+    z-index: 50;
+}
+
+img{
+    margin-bottom: 20px;
+}
+.animated {
+  /* アニメーションで表示させるため最初は非表示 */
+  opacity: 0;
+  margin: 40px auto;
+}
+
+.navbar {
+  font-family: 'Roboto, YuGothic, '游ゴシック', sans-serif;
+}
+
+.navbar-default {
+    opacity: 0.8;
+}
+
+.navbar-default
+.navbar-nav>.active>a,
+.navbar-default
+.navbar-nav>.active>a:focus,
+.navbar-default
+.navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #2daabe;
+}
+
+#logo{
+    padding-top: 10px;
+    height: 60px;
+
+}
+
+h1.top__title {
+    font-size: 180%;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0;
+    padding-top: 10px;
+    height: 60px;
+    color: #2DAABE;
+}
+
+span.accent{
+    color: #C1007B;
+    font-size: 120%;
+}
+
+#content{
+    margin-top: 120px;
+}
+
+#wrapper {
+    padding: 0 40px;
+
+}
+
+#key_message {
+font-size: 300%;
+margin-top: -10px;
+padding: 30px;
+}
+
+.komidasi{
+    color: #2DAABE;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-weight: 900;
+    font-size: 250%;
+    text-align: left;
+    margin-top: -130px; /* 固定ナビの高さ分のネガティブマージン */
+    padding-top: 130px; /* 打ち消し用のパディング */
+    margin-bottom: 20px;
+}
+
+h3.komidasi{
+    font-size: 180%;
+}
+#bio__content{
+    border: solid 1px #ccc;
+    padding: 2em;
+}
+
+#info {
+    padding-left: 40px;
+    margin-bottom: 0;
+    background-color: #eee;
+}
+
+#info>.komidasi{
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+#info>.animated{
+    margin: 0;
+    padding: 20px;
+}
+
+#profile--img{
+    text-align: left;
+}
+
+.myinfo {
+    font-size: 160%;
+    font-weight: 700;
+    text-align: left;
+}
+
+i.fa {
+    margin-right: 10px
+}
+
+#copyright{
+    padding-top: 5px;
+    background-color: #2DAABE;
+    color: #fff;
+}
+
+#album{
+    padding-left: 40px;
+}
+
+div.movie{
+    width: 220px;
+    border: solid 1px #ccc;
+    margin: 4px auto;
+    padding: 4px;
+    background-color: #000;
+}
+.table>tbody>tr>td,
+ .table>tbody>tr>th,
+  .table>tfoot>tr>td,
+   .table>tfoot>tr>th,
+    .table>thead>tr>td,
+     .table>thead>tr>th {
+    vertical-align: middle;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgba(45, 170, 190, 0.1);
+}
+
+/* 印刷用スタイル */
+@media print {
+  .animated {
+    /* すべて表示 */
+    opacity: 1;
+  }
+}
