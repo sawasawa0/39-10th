@@ -17,6 +17,9 @@ img{
     margin-bottom: 20px;
 }
 
+ul {
+    list-style-type: none;
+}
 
 .animated {
   /* アニメーションで表示させるため最初は非表示 */
@@ -48,12 +51,6 @@ img{
 
 }
 
-div#bio__area{
-    background-image: url(P02_miku_biography_resize.png);
-    background-repeat: no-repeat;
-    background-position: 10% 10%;
-    height: 500px;
-}
 h1.top__title {
     font-size: 180%;
     font-weight: 700;
@@ -67,6 +64,7 @@ h1.top__title {
 @media screen and (max-width: 1024px) {
     h1.top__title {
         font-size: 100%;
+        overflow: hidden;
 	}
 }
 
@@ -77,6 +75,7 @@ span.accent{
 }
 
 #content{
+    padding: 20px;
 }
 
 #wrapper {
@@ -94,7 +93,7 @@ margin-top: -10px;
 padding: 30px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 800px) {
     #key_message {
         font-size: 130%;
         padding: 15px;
@@ -116,10 +115,24 @@ h2.komidasi:before{
     margin-bottom: 120px;
 }
 
-h3.komidasi{
-    font-size: 180%;
+h4.komidasi{
+    font-size: 140%;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: right;
 }
 
+@media screen and (max-width: 800px) {
+    .komidasi {
+        font-size: 180%;
+        margin-bottom: 10px;
+	}
+    h2.komidasi:before{
+        margin-bottom: 40px;
+    }
+    h4.komidasi{
+        font-size: 115%;
+    }}
 
 .jacket_large figure{
     height: 250px;
@@ -135,7 +148,9 @@ h3.komidasi{
      margin: 60px auto;
  }
 
- .jacket figure {
+
+
+.jacket figure {
      margin-bottom: 110px;
  }
 
@@ -143,9 +158,28 @@ h3.komidasi{
     display: none;
 }
 
+#bio__area{
+    background-image: url(P02_miku_biography_resize.png);
+    background-repeat: no-repeat;
+    background-position: 100% 20%;
+    padding-bottom: 40px;
+}
+
+#bio__area h4{
+    color: #2DAABE;
+    font-size: 140%;
+    font-weight: 700;
+}
 #bio__content{
+    color: #111111;
+    font-size: 100%;
+    line-height: 1.6em;
+    text-align: left;
+    text-shadow: 2px 2px 1px #fff,-2px 2px 1px #fff,2px -2px 1px #fff,-2px -2px 1px #fff;
     border: solid 1px #ccc;
+    background-color: #fff;
     padding: 2em;
+    opacity: 0.7;
 }
 
 #info {
@@ -157,6 +191,7 @@ h3.komidasi{
 #info>.komidasi{
     margin-top: 0;
     padding-top: 20px;
+    font-size: 160%;
 }
 
 #info>.animated{
@@ -168,6 +203,11 @@ h3.komidasi{
     text-align: left;
 }
 
+img#profile--img{
+    height: 160px;
+    width: 160px;
+}
+
 .myinfo {
     font-size: 160%;
     font-weight: 700;
@@ -176,6 +216,41 @@ h3.komidasi{
 
 i.fa {
     margin-right: 10px
+}
+
+@media screen and (max-width: 767px) {
+    p,ul{
+        font-size: 16px;
+    }
+
+    #bio__area{
+        background-image: none;
+    }
+
+    #bio__area h4{
+        font-size: 120%;
+    }
+
+    #profile--img{
+        text-align: center;
+    }
+    img#profile--img{
+        height: 160px;
+        width: 160px;
+	}
+    .pull-right{
+        float: none;
+    }
+
+    .myinfo {
+        font-size: 100%;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    #license{
+        text-align: left;
+    }
 }
 
 #copyright{
@@ -208,6 +283,62 @@ div.movie{
     background-color: rgba(45, 170, 190, 0.1);
 }
 
+@media screen and (max-width: 787px){
+    #album table { width: 100%; border:none; padding: 10px;}
+    #album thead { display: none;}
+    #album tr {
+        border-top: 1px solid #ccc;
+        display: block;
+        margin-bottom: 0;
+    }
+    #album tr {
+        border-top: 1px solid #ccc;
+        display: block;
+        margin-bottom: 0;
+        padding: 10px 0;
+    }
+        #album td {
+        border: none;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        border-bottom: none;
+        display: block;
+        padding: 0 20px;
+        text-align: left;
+    }
+    #album table tr:last-child td:last-child {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+/* トップに戻るボタン */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+
+    background-color: #C1007B;
+    color: #fff;
+    opacity: 0.9;
+
+    /* 透明度をふわっと変える演出 */
+    transition: opacity .25s;
+
+    font-size: 2rem;
+    line-height: 55px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* マウスを乗せた時に透明度を変える */
+.back-to-top:hover {
+    opacity: 0.9;
+}
 
 
 .balloon{

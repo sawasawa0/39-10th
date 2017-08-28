@@ -30,6 +30,9 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
+
+        <link rel="stylesheet" type="text/css" href="css/slick.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="screen" />
         <link rel="stylesheet" href="css/main.css">
 
         <noscript>
@@ -44,19 +47,32 @@
                 <nav class="navbar navbar-default navbar-fixed-top">
                   <div class="container-fluid">
                     <div class="navbar-header">
-                        <div id="title" class="row">
-                            <div id="logo" class="col-sm-1">
-                                <img src="ロゴ" alt="10周年記念ロゴ">
-                            </div>
-                            <a href="index.html">
-                                <h1 class="top__title col-sm-10">Hatsune Miku <span class="accent">"Un"</span>Official 10th Aniversary Website</h1>
-                            </a>
-                        </div>
+                      <!-- 画面幅が狭い時に表示されるハンバーガーメニュー -->
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">ナビゲーションの表示切り替え</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div><!--/.navbar-header -->
 
+                    <!-- メニュー -->
+                    <div id="navbar" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                          <li><a href="index.html">TOP</a></li>
+                          <!-- <li><a href="#interview">Interview</a></li> -->
+                          <li><a href="discography.html">Discography</a></li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
                   </div><!--/.container-fluid -->
                 </nav>
-
             </header>
+        </div>
+        <div id="title" class="row">
+            <div id="logo" class="col-xs-1">
+                <img src="ロゴ">
+            </div>
+            <h1 class="top__title col-xs-10">Hatsune Miku <span class="accent">"Un"</span>Official 10th Aniversary Website</h1>
         </div>
 
         <div id="content" class="rows text-center">
@@ -66,8 +82,7 @@
                 <div class="row">
                     <div class="jacket jacket_large col-sm-12">
                         <figure>
-                                <img src="http://placehold.jp/240x240.png" class="img-thumbnail">
-                                <!-- <img src="img/S01_Singurality.png" class="img-thumbnail" alt="Singurality"> -->
+                            <img src="img\A04_FUTURE.png" class="img-thumbnail">
                         </figure>
                     </div>
 
@@ -310,7 +325,26 @@
                     </table>
                 </div>
 
-            </div>
+                <div class="row animated">
+                    <div id="disco--area">
+                        <ul class="disco">
+                            <li class="jacket jacket_small"><a href="album01.html"><img src="img/A01_ELLECTRICANGEL.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album02.html"><img src="img/A02_SOUND.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album03.html"><img src="img/A03_LOVEISWAR.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album04.html"><img src="img/A04_FUTURE.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album05.html"><img src="img/A05_EndingFirstlove.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album06.html"><img src="img/A06_planet.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album07.html"><img src="img/A07_STAR.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album08.html"><img src="img/A08_WORLDSEND.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album09.html"><img src="img/A09_SEACRET.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album10.html"><img src="img/A10_GAME.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album11.html"><img src="img/A11_HEAVEN.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album12.html"><img src="img/A12_TOKYO.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album13.html"><img src="img/A13_Heart.png" class=" img-thumbnail"></a></li>
+                            <li class="jacket jacket_small"><a href="album14.html"><img src="img/A14_DreamlessDreamer.png" class=" img-thumbnail"></a></li>
+                        </ul>
+                    </div>
+                </div>            </div>
         </div>
         <!-- フッター -->
         <footer>
@@ -326,6 +360,36 @@
             </div>
         </footer>
 
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script>
+        $('.disco').slick({
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 5,
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+        </script>
         <!-- Bootstrap JavaScript -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

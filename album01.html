@@ -30,6 +30,10 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
+
+        <link rel="stylesheet" type="text/css" href="css/slick.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="screen" />
+
         <link rel="stylesheet" href="css/main.css">
 
         <noscript>
@@ -44,148 +48,187 @@
                 <nav class="navbar navbar-default navbar-fixed-top">
                   <div class="container-fluid">
                     <div class="navbar-header">
-                        <div id="title" class="row">
-                            <div id="logo" class="col-sm-1">
-                                <img src="ロゴ" alt="10周年記念ロゴ">
-                            </div>
-                            <a href="index.html">
-                                <h1 class="top__title col-sm-10">Hatsune Miku <span class="accent">"Un"</span>Official 10th Aniversary Website</h1>
-                            </a>
-                        </div>
+                      <!-- 画面幅が狭い時に表示されるハンバーガーメニュー -->
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">ナビゲーションの表示切り替え</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div><!--/.navbar-header -->
 
+                    <!-- メニュー -->
+                    <div id="navbar" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                          <li><a href="index.html">TOP</a></li>
+                          <!-- <li><a href="#interview">Interview</a></li> -->
+                          <li><a href="discography.html">Discography</a></li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
                   </div><!--/.container-fluid -->
                 </nav>
-
             </header>
         </div>
+        <div id="title" class="row">
+            <div id="logo" class="col-xs-1">
+                <img src="ロゴ">
+            </div>
+            <h1 class="top__title col-xs-10">Hatsune Miku <span class="accent">"Un"</span>Official 10th Aniversary Website</h1>
+        </div>
+
 
         <div id="content" class="rows text-center">
-            <div id="album">
+            <div id="album" class="animated">
                 <h2 class="komidasi">ELLECTRIC ANGEL</h2>
                 <h3 class="komidasi">1st album</h3>
                 <div class="row">
                     <div class="jacket jacket_large col-sm-12">
                         <figure>
-                                <img src="http://placehold.jp/240x240.png" class="img-thumbnail">
-                                <!-- <img src="img/S01_Singurality.png" class="img-thumbnail" alt="Singurality"> -->
+                            <img src="img\A01_ELLECTRICANGEL.png" class="img-thumbnail">
                         </figure>
                     </div>
 
                     <table class="table table-striped table-condensed">
-                        <tr>
-                            <th class="text-center">track</th>
-                            <th class="text-center">title</th>
-                            <th class="text-center">Producer</th>
-                            <th class="text-center">Releace</th>
-                            <th class="text-center">Movie</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>みくみくにしてあげる♪</td>
-                            <td>ika</td>
-                            <td>2007/9/20</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1097445/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1097445"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>タイムリミット</td>
-                            <td>畳P</td>
-                            <td>2007/10/9</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1241072/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1241072"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>White Letter</td>
-                            <td>GonGoss</td>
-                            <td>2007/9/9</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1028001/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1028001"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>恋スルVOC@LOID</td>
-                            <td>OSTER_project</td>
-                            <td>2007/9/13</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1050729/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1050729"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>初音ミクの暴走</td>
-                            <td>cosMo(暴走P)</td>
-                            <td>2007/10/22</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1342044/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1342044"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Ievan Polkka</td>
-                            <td>Otomania</td>
-                            <td>2007/9/4</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm982882/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm982882"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>えれくとりっく・えんじぇぅ</td>
-                            <td>ヤスオP</td>
-                            <td>2007/10/10</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1249071/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1249071"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>私の時間</td>
-                            <td>くちばしP</td>
-                            <td>2007/10/22</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1340413/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1340413"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Packaged</td>
-                            <td>kz</td>
-                            <td>2007/9/25</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1136355/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1136355"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>celluloid</td>
-                            <td>baker</td>
-                            <td>2007/10/5</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1204327/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1204327"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>melody...</td>
-                            <td>mikuru396</td>
-                            <td>2007/10/27</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1381337/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1381337"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>きみをわすれない</td>
-                            <td>ryo</td>
-                            <td>2007/11/30</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1656992/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1656992"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>あなたの歌姫</td>
-                            <td>azuma</td>
-                            <td>2007/9/18</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1085336/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1085336"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>ハジメテノオト</td>
-                            <td>malo</td>
-                            <td>2007/10/14</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1274898/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1274898"></a></noscript></div></td>
-                        </tr>
-                        <tr>
-                            <td>15</td>
-                            <td>ふたりのもじぴったん</td>
-                            <td>すけっちP</td>
-                            <td>2007/9/9</td>
-                            <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1026257/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1026257"></a></noscript></div></td>
-                        </tr>
-
+                        <thead>
+                            <tr>
+                                <th class="text-center">track</th>
+                                <th class="text-center">title</th>
+                                <th class="text-center">Producer</th>
+                                <th class="text-center">Releace</th>
+                                <th class="text-center">Movie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>みくみくにしてあげる♪</td>
+                                <td>ika</td>
+                                <td>2007/9/20</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1097445/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1097445"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>タイムリミット</td>
+                                <td>畳P</td>
+                                <td>2007/10/9</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1241072/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1241072"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>White Letter</td>
+                                <td>GonGoss</td>
+                                <td>2007/9/9</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1028001/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1028001"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>恋スルVOC@LOID</td>
+                                <td>OSTER_project</td>
+                                <td>2007/9/13</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1050729/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1050729"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>初音ミクの暴走</td>
+                                <td>cosMo(暴走P)</td>
+                                <td>2007/10/22</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1342044/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1342044"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Ievan Polkka</td>
+                                <td>Otomania</td>
+                                <td>2007/9/4</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm982882/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm982882"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>えれくとりっく・えんじぇぅ</td>
+                                <td>ヤスオP</td>
+                                <td>2007/10/10</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1249071/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1249071"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>私の時間</td>
+                                <td>くちばしP</td>
+                                <td>2007/10/22</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1340413/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1340413"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Packaged</td>
+                                <td>kz</td>
+                                <td>2007/9/25</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1136355/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1136355"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>celluloid</td>
+                                <td>baker</td>
+                                <td>2007/10/5</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1204327/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1204327"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>melody...</td>
+                                <td>mikuru396</td>
+                                <td>2007/10/27</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1381337/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1381337"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>きみをわすれない</td>
+                                <td>ryo</td>
+                                <td>2007/11/30</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1656992/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1656992"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>あなたの歌姫</td>
+                                <td>azuma</td>
+                                <td>2007/9/18</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1085336/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1085336"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>ハジメテノオト</td>
+                                <td>malo</td>
+                                <td>2007/10/14</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1274898/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1274898"></a></noscript></div></td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>ふたりのもじぴったん</td>
+                                <td>すけっちP</td>
+                                <td>2007/9/9</td>
+                                <td><div class="movie"><script type="application/javascript" src="http://embed.nicovideo.jp/watch/sm1026257/script?w=200&h=113"></script><noscript><a href="http://www.nicovideo.jp/watch/sm1026257"></a></noscript></div></td>
+                            </tr>
+                        </tbody>
                     </table>
+                </div>
+
+                <div class="row animated">
+                        <div id="disco--area">
+                                <ul class="disco">
+                                    <li class="jacket jacket_small"><a href="album01.html"><img src="img/A01_ELLECTRICANGEL.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album02.html"><img src="img/A02_SOUND.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album03.html"><img src="img/A03_LOVEISWAR.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album04.html"><img src="img/A04_FUTURE.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album05.html"><img src="img/A05_EndingFirstlove.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album06.html"><img src="img/A06_planet.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album07.html"><img src="img/A07_STAR.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album08.html"><img src="img/A08_WORLDSEND.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album09.html"><img src="img/A09_SEACRET.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album10.html"><img src="img/A10_GAME.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album11.html"><img src="img/A11_HEAVEN.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album12.html"><img src="img/A12_TOKYO.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album13.html"><img src="img/A13_Heart.png" class=" img-thumbnail"></a></li>
+                                    <li class="jacket jacket_small"><a href="album14.html"><img src="img/A14_DreamlessDreamer.png" class=" img-thumbnail"></a></li>
+                                </ul>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -204,6 +247,38 @@
             </div>
         </footer>
 
+        <!-- トップに戻るボタン -->
+        <a href="#" class="back-to-top">▲</a>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script>
+        $('.disco').slick({
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 5,
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+        </script>
         <!-- Bootstrap JavaScript -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

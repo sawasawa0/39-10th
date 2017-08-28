@@ -1,202 +1,278 @@
 <!DOCTYPE html>
-<html lang="ja">
-	<head>
+    <html lang="ja">
+        <head>
         <meta charset="utf-8">
-		<meta name="description" content="初音ミクの10周年をお祝いする非公式のファンサイトです。">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="初音ミクの10周年をお祝いする非公式のファンサイトです。">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- OGP -->
-		<!-- ※基本共通設定 -->
-		<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-		<meta property="og:title" content="初音ミク10周年生誕祭【非公式】 " />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://39-10th.com" />
-		<meta property="og:image" content="http://39-10th.com/img/39-10thOGP01.png" />
-		<meta property="og:site_name" content="39-10th" />
-		<meta property="og:description" content="初音ミクの10周年をお祝いする非公式のファンサイトです。" />
+		<title> 39-10th 初音ミク10周年生誕祭【非公式】</title>
 
-		<!-- Facebook用設定 -->
-		<meta property="fb:app_id" content="233804487143118" />
+        <!-- OGP -->
+        <!-- ※基本共通設定 -->
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+        <meta property="og:title" content="初音ミク10周年生誕祭【非公式】 " />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://39-10th.com" />
+        <meta property="og:image" content="http://39-10th.com/img/39-10thOGP01.png" />
+        <meta property="og:site_name" content="39-10th 初音ミク10周年生誕祭【非公式】" />
+        <meta property="og:description" content="初音ミクの10周年をお祝いする非公式のファンサイトです。" />
 
-		<!-- ※Twitter共通設定 -->
-		<meta name="twitter:card" content="photo" />
+        <!-- Facebook用設定 -->
+        <meta property="fb:app_id" content="233804487143118" />
+
+        <!-- ※Twitter共通設定 -->
+        <meta name="twitter:card" content="photo" />
 
         <!-- Webフォント -->
-        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-		<!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/vendor/animate.css">
-        <link rel="stylesheet" href="css/vendor/magnific-popup.css">
-		<link rel="stylesheet" href="css/style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="screen" />
+        <link rel="stylesheet" href="css/main.css">
 
         <noscript>
-          <!-- JavaScriptが無効化されている場合の追加スタイルシート -->
-          <link rel="stylesheet" href="css/noscript.css">
+            <!-- JavaScriptが無効化されている場合の追加スタイルシート -->
+            <link rel="stylesheet" href="css/noscript.css">
         </noscript>
 
-		<script>
-		$(function () {
-			var austDay = new Date();
-			austDay = new Date(austDay.getFullYear(), 7, 31);
-			$('#defaultCountdown').countdown({until: austDay});
-			$('#year').text(austDay.getFullYear());
-		});
-		</script>
 
 	</head>
-	<body>
-		<header>
+    <body data-spy="scroll" data-target="#navbar">
+        <div id="header">
+            <header class="text-right">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <!-- 画面幅が狭い時に表示されるハンバーガーメニュー -->
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">ナビゲーションの表示切り替え</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div><!--/.navbar-header -->
 
-		</header>
-		<div id="wrapper">
-			<div class="rows">
-				<div class="text-center">
-					<h1 class="countdown-text text-center">初音ミク生誕10周年まで</h1>
+                    <!-- メニュー -->
+                    <div id="navbar" class="navbar-collapse collapse">
+                      <ul class="nav navbar-nav">
+                          <li><a href="#title">TOP</a></li>
+                          <!-- <li><a href="#interview">Interview</a></li> -->
+                          <li><a href="#biography">Biography</a></li>
+                          <li><a href="#discography">Discography</a></li>
+                          <li><a href="#official">Official Website</a></li>
+                      </ul>
+                    </div><!--/.nav-collapse -->
+                  </div><!--/.container-fluid -->
+                </nav>
+            </header>
+        </div>
+        <div id="title" class="row">
+            <div id="logo" class="col-xs-1">
+                <img src="ロゴ">
+            </div>
+            <h1 class="top__title col-xs-10">Hatsune Miku <span class="accent">"Un"</span>Official 10th Aniversary Website</h1>
+        </div>
 
-					<!-- カウントダウンタイマー -->
+        <div id="content" class="row text-center">
+            <div id="main_visual" class="komidasi">
+                <img src="img/P01_mainvisual.png" alt="メインビジュアル">
+            </div>
+            <div id="key_message">
+                <p><span class="accent">39!</span> 10周年の感謝を込めて</p>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="sawasawa0">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                </script>
+            </div>
+            <div class="fb-like" data-href="http://39-10th.com" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
 
-					<div id="defaultCountdown" class="clearfix"></div>
+            <div id="wrapper">
+                <div id="new_releace" class="row">
+                    <div class="jacket jacket_large col-sm-offset-2 col-sm-4">
+                        <figure>
+                            <a href="http://piapro.jp/t/Hxk-" target="_blank">
+                                <img src="img/S01_singurality.png" class="img-thumbnail">
+                                <!-- <img src="img/S01_Singurality.png" class="img-thumbnail" alt="Singurality"> -->
+                            </a>
+                            <figcaption>
+                                <p>New Single</p>
+                                <p>Singurality</p>
+                            </figcaption>
+                        </figure>
+                    </div>
 
-					<h2 class="countdown-text">comming soon...</h2>
-					<p class="countdown-text-mini">当サイトは、初音ミクの10周年をお祝いする<br>非公式のファンサイトです。</p>
-					<p class="countdown-text-mini">公式の初音ミク10周年記念サイトはこちら</p>
-					<a href="http://piapro.net/miku10th/" class="countdown-text-link"><p>http://piapro.net/miku10th/</p></a>
-				</div>
-			</div>
-		</div>
+                    <div class="jacket jacket_large col-sm-4">
+                        <figure>
+                            <a href="album14.html">
+                                <img src="img/A14_DreamlessDreamer.png" class="img-thumbnail">
+                                <!-- <img src="img/A15_DreamlessDreamer.png" class="img-thumbnail" alt="DreamlessDreamer(2016-2017の楽曲を集めた（なんちゃって）アルバム)"> -->
+                            </a>
+                            <figcaption>
+                                <p>New Album</p>
+                                <p>Dreamless Dreamer</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div id="interview" class="animated">
+                    <h2 class="komidasi">Interview</h2>
+                    <a href="interview.html">
+                        <img src="http://placehold.jp/800x120.png">
+                        <!-- <img src="img/P02_interview_1.png" alt="10周年記念（なんちゃって）特別インタビュー"> -->
+                    </a>
+                </div>
+
+                <div id="biography" class="animated">
+                    <h2 class="komidasi">Biography</h2>
+                    <div id="bio__area" class="row">
+                        <!-- ここにCSSでミクのイメージ画像を配置する -->
+                        <div id="bio__content" class="col-sm-12">
+                            <h4>初音ミク<br>
+                                （Hatsune Miku）
+                            </h4>
+                            <p>
+                                初音ミクは、日本出身のバーチャルシンガー。北海道札幌市生まれ。16歳。<br>
+                                2007年8月31日クリエイター・フューチャー・メディアからデビュー。<br>
+                                透明感のある人間とも電子音ともとれない独特な声と長いツインテールが特徴的なキュートなルックスで一躍人気となる。<br>
+                                楽曲ごとに別々のプロデューサーが担当するという異例のスタイルを取り、圧倒的なリリーススピードを特徴としている。<br>
+                            </p>
+                            <p>
+                                デビュー当初はカバー曲が多く、特に、「Ievan pollca」では、中毒者が続出する。<br>
+                                また、徐々にオリジナル曲が増やしていき、「みくみくにしてあげる♪」は、ぼからんチャート初代1位となる。12月にリリースした「メルト」が大ヒットし、人気が不動のものとなる。<br>
+                                ニコニコ動画では、歴代再生数の上位を占め、一つのジャンルとして定着する。<br>
+                            </p>
+                            <p>
+                            その後、活動の領域を広げていき、<br>
+                            2009年ミクフェス '09（夏）では、初めてライブパフォーマンスを成功させ、人気のは幅を広げていく。<br>
+                            2010年札幌雪まつりにて、雪像を初展示。雪像化を記念し、冬の北海道の応援キャラクター「雪ミク」として、以降毎年同イベントへの参加をする。<br>
+                            2011年7月には、MIKUNOPOLIS in Los Angelesでアメリカデビュー。<br>
+                            そして同年12月、Google ChromeのCMに起用され話題を呼んだ。<br>
+                            また2011年にリリースした「千本桜」は大ヒットを収め、2015年の紅白歌合戦では、小林幸子にカバーされる。<br>
+                            2016年には、国内5都市、海外４カ国１地域13都市を巡る「HATSUNE MIKU EXPO 2016」を成功させる。<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div id="discography" class="animated">
+                    <h2 class="komidasi">Discography</h2>
+                    <div id="disco--area">
+                            <ul class="disco">
+                                <li class="jacket jacket_small"><a href="album01.html"><img src="img/A01_ELLECTRICANGEL.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album02.html"><img src="img/A02_SOUND.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album03.html"><img src="img/A03_LOVEISWAR.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album04.html"><img src="img/A04_FUTURE.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album05.html"><img src="img/A05_EndingFirstlove.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album06.html"><img src="img/A06_planet.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album07.html"><img src="img/A07_STAR.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album08.html"><img src="img/A08_WORLDSEND.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album09.html"><img src="img/A09_SEACRET.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album10.html"><img src="img/A10_GAME.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album11.html"><img src="img/A11_HEAVEN.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album12.html"><img src="img/A12_TOKYO.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album13.html"><img src="img/A13_Heart.png" class=" img-thumbnail"></a></li>
+                                <li class="jacket jacket_small"><a href="album14.html"><img src="img/A14_DreamlessDreamer.png" class=" img-thumbnail"></a></li>
+                            </ul>
+                    </div>
+                    <a href="discography.html">
+                        <h4 class="komidasi"><i class="fa fa-youtube-play" aria-hidden="true"></i>アルバム一覧はこちら</h4>
+                    </a>
+                </div>
+
+                <div id="official" class="animated">
+                    <h2 class="komidasi">Official Website</h2>
+                    <div class="row">
+                        <ul class="text-left">
+                            <li><a href=" http://piapro.net/miku10th/" target="_blank"> 初音ミク10周年記念サイト</a></li>
+                            <li><a href=" http://magicalmirai.com/2017/" target="_blank"> 初音ミク「マジカルミライ 2017」</a></li>
+                            <li><a href=" http://d-ue.jp/miku10th/" target="_blank"> 初音ミク10周年記念コンピレーションアルバム「Re:Start」</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- フッター -->
+        <footer>
+            <div id="info" class="text-center animated">
+                <h2 class="komidasi">このサイトを作ったひと</h2>
+                <div class="row">
+                    <div id="profile--img" class="col-sm-offset-2 col-sm-5">
+                        <img src="img\P10_profile.png"  height="160px" width="160px">
+                    </div>
+                    <div id="profile--txt" class="col-sm-5">
+                        <p class="myinfo"><i class="fa fa-star" aria-hidden="true"></i>sawasawa</p>
+                        <a href="https://twitter.com/sawasawa0">
+                            <p class="myinfo"><i class="fa fa-twitter" aria-hidden="true"></i>@sawasawa0</p>
+                        </a>
+
+                        <a href="http://sawasawaworks.com/">
+                            <p class="myinfo"><i class="fa fa-home" aria-hidden="true"></i>http://sawasawaworks.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="license" class="text-center animated">
+                    <p>本Webサイトは、<a href="http://piapro.jp/license/pcl/summary">ピアプロ・キャラクター・ライセンス</a>に基づいて、<br>
+                        クリプトン・フューチャー・メディア株式会社のキャラクター「初音ミク」の10周年をお祝いする目的で制作しました。
+                    </p>
+                </div>
+            </div>
+            <div id="copyright" class="row text-center">
+                <p>&copy; 2017 StarCreates</p>
+            </div>
+        </footer>
+
+        <!-- トップに戻るボタン -->
+        <a href="#" class="back-to-top">▲</a>
 
 
-		<!-- Bootstrap JavaScript -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script>
+        $('.disco').slick({
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 5,
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
+                }
+              ]
+            });
+        </script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-		<script src="js/jquery.plugin.min.js"></script>
-		<script src="js/jquery.countdown.js"></script>
+        <script src="js/jquery.plugin.min.js"></script>
+        <script src="js/jquery.countdown.js"></script>
 
         <script src="js/jquery.waypoints.min.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/mobile-detect.min.js"></script>
+
+
+
         <script src="js/main.js"></script>
-
 	</body>
-</html>
-
-
-
-
-
-
-  <head>
-    <meta charset="utf-8">
-    <title>39-10th</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Webフォント -->
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/vendor/animate.css">
-    <link rel="stylesheet" href="css/vendor/magnific-popup.css">
-    <link rel="stylesheet" href="css/main.css">
-    <noscript>
-      <!-- JavaScriptが無効化されている場合の追加スタイルシート -->
-      <link rel="stylesheet" href="css/noscript.css">
-    </noscript>
-  </head>
-
-  <body data-spy="scroll" data-target="#navbar">
-    <section class="top">
-      <!-- ナビゲーションバー -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <!-- 画面幅が狭い時に表示されるハンバーガーメニュー -->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">ナビゲーションの表示切り替え</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <!-- ホームリンク -->
-            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
-          </div><!--/.navbar-header -->
-
-          <!-- メニュー -->
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#top">TOP</a></li>
-              <li><a href="#puppies">子犬</a></li>
-              <li><a href="#kittens">子猫</a></li>
-              <li><a href="#prepare">大切なこと</a></li>
-              <li><a href="#gallery">ギャラリー</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-
-        </div><!--/.container-fluid -->
-      </nav>
-
-      <!-- 背景とビデオ -->
-      <div id="top" class="top__bg">
-        <video autoplay muted loop class="top__video">
-          <source src="video/top-video.mp4" type="video/mp4">
-        </video>
-      </div>
-
-      <div class="top__text-box">
-        <h1 class="top__title">Puppies and Kittens!</h1>
-        <div class="top__catchphrase">世界の子犬と子猫を大切に育てよう</div>
-      </div>
-    </section>
-
-
-
-    <!-- ギャラリー -->
-    <section id="gallery" class="gallery">
-      <div class="gallery__phrase animated">ギャラリー</div>
-      <h2 class="gallery__title animated">Gallery</h2>
-      <div class="image-gallery animated">
-        <div class="image-gallery__item">
-          <a class="popup" href="img/kitten1.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/kitten1.jpg" width="176" height="176" alt="シェパード"></a>
-        </div>
-        <div class="image-gallery__item">
-          <a class="popup" href="img/kitten2.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/kitten2.jpg" width="176" height="176" alt="レトリバー"></a>
-        </div>
-        <div class="image-gallery__item">
-          <a class="popup" href="img/kitten3.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/kitten3.jpg" width="176" height="176" alt="プードル"></a>
-        </div>
-        <div class="image-gallery__item">
-          <a class="popup" href="img/kitten4.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/kitten4.jpg" width="176" height="176" alt="ポメラニアン"></a>
-        </div>
-        <div class="image-gallery__item">
-          <a class="popup" href="img/puppy1.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/puppy1.jpg" width="176" height="176" alt="アメリカンショートヘア"></a>
-        </div>
-        <div class="image-gallery__item">
-          <a class="popup" href="img/puppy2.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/puppy2.jpg" width="176" height="176" alt="スコティッシュフォールド"></a>
-        </div>
-        <div class="image-gallery__item">
-          <a class="popup" href="img/puppy3.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/puppy3.jpg" width="176" height="176" alt="ベンガル"></a>
-        </div>
-        <div class="image-gallery__item">
-          <a class="popup" href="img/puppy4.jpg"><img class="image-gallery__img" src="img/gallery-thumbnail/puppy4.jpg" width="176" height="176" alt="ロシアンブルー"></a>
-        </div>
-      </div><!--/.image-gallery -->
-    </section><!--/.gallery -->
-
-    <!-- フッター -->
-    <footer>
-      &copy; 2016 Puppies and Kittens
-    </footer>
-
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/vendor/jquery.waypoints.min.js"></script>
-    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendor/mobile-detect.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
 </html>
