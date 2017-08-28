@@ -17,6 +17,7 @@ img{
     margin-bottom: 20px;
 }
 
+
 .animated {
   /* アニメーションで表示させるため最初は非表示 */
   opacity: 0;
@@ -47,15 +48,28 @@ img{
 
 }
 
+div#bio__area{
+    background-image: url(P02_miku_biography_resize.png);
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+    height: 500px;
+}
 h1.top__title {
     font-size: 180%;
     font-weight: 700;
     text-align: left;
-    margin-top: 0;
-    padding-top: 10px;
+    margin-top: 60px;
     height: 60px;
     color: #2DAABE;
+    white-space: nowrap;
 }
+
+@media screen and (max-width: 1024px) {
+    h1.top__title {
+        font-size: 100%;
+	}
+}
+
 
 span.accent{
     color: #C1007B;
@@ -63,12 +77,15 @@ span.accent{
 }
 
 #content{
-    margin-top: 120px;
 }
 
 #wrapper {
     padding: 0 40px;
 
+}
+
+#main_visual img{
+    width: 100%;
 }
 
 #key_message {
@@ -77,14 +94,21 @@ margin-top: -10px;
 padding: 30px;
 }
 
+@media screen and (max-width: 1024px) {
+    #key_message {
+        font-size: 130%;
+        padding: 15px;
+	}
+}
+
 .komidasi{
     color: #2DAABE;
     font-family: 'Mukta Mahee', sans-serif;
     font-weight: 900;
     font-size: 250%;
     text-align: left;
-    margin-top: -130px; /* 固定ナビの高さ分のネガティブマージン */
-    padding-top: 130px; /* 打ち消し用のパディング */
+    margin-top: -60px; /* 固定ナビの高さ分のネガティブマージン */
+    padding-top: 60px; /* 打ち消し用のパディング */
     margin-bottom: 20px;
 }
 
@@ -95,6 +119,30 @@ h2.komidasi:before{
 h3.komidasi{
     font-size: 180%;
 }
+
+
+.jacket_large figure{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.jacket_small figure{
+     height: 150px;
+     width: 150px;
+     text-align: center;
+     margin: 60px auto;
+ }
+
+ .jacket figure {
+     margin-bottom: 110px;
+ }
+
+#interview {
+    display: none;
+}
+
 #bio__content{
     border: solid 1px #ccc;
     padding: 2em;
